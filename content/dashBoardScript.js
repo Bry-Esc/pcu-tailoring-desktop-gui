@@ -35,7 +35,7 @@ function logClicked() {
     '<div class="log-content-items left-part">' +
     "              <img" +
     '                class="default-profile-img"' +
-    '                src="/images/defaultProfilePic.png"' +
+    '                src="../images/defaultProfilePic.png"' +
     '                alt=""' +
     "              />" +
     "            </div>" +
