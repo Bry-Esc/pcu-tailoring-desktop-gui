@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+    </style>
+    <title>Login</title>
+  </head>
+  <body>
+    <img
+      id="backgroundIMG"
+      src="./images/backGroundIMG.png"
+      alt="backgroundIMG"
+    />
+    <!-- Grid Container -->
+    <div id="login-grid-container">
+      <img
+        id="tailoringLogo"
+        src="./images/logoHighRes.png"
+        alt="tailoringLogo"
+      />
+
+      <div id="right-container">
+        <div id="upper-image-part">
+          <img
+            id="upperImage"
+            src="./images/upperImagePartLowRes.png"
+            alt="upperImage"
+          />
+          <p id="login">Login</p>
+        </div>
+
+        <div id="lower-credentials-part">
+          <div id="username-container">
+            <img id="usernameIMG" src="./images/username.png" alt="username" />
+            <input
+              id="username"
+              class="inputs"
+              type="text"
+              placeholder="Username"
+            />
+          </div>
+
+          <div id="password-container">
+            <img id="passwordIMG" src="./images/password.png" alt="password" />
+            <input
+              id="password"
+              class="inputs"
+              type="password"
+              placeholder="Password"
+            />
+          </div>
+        </div>
+
+        <button onclick="loginClick()" id="loginButton">Login</button>
+      </div>
+      <!-- Grid Container -->
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

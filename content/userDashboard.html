@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dashBoardStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Welcome</title>
+  </head>
+
+  <body>
+    <div class="outer-grid">
+      <header>
+        <div class="left-header">
+          <i class="fa-solid fa-bars" onclick="toggleNav()"></i>
+          <img
+            class="headUser headerUserIcon"
+            src="../images/headerUserIcon.png"
+            alt="headerUserIcon"
+          />
+          <h2 class="headUser headUserText">Hi, User!</h2>
+        </div>
+        <div class="right-header">
+          <img
+            class="headSettingsIcon"
+            src="../images/headSettingsIcon.png"
+            alt="headSettingsIcon"
+          />
+        </div>
+      </header>
+      <nav class="hide-nav">
+        <div class="buttons-container">
+          <button class="nav-button log" onclick="logClicked()">
+            Student's Log
+          </button>
+          <button class="nav-button orders" onclick="ordersClicked()">
+            Orders
+          </button>
+          <button class="nav-button inventory" onclick="inventoryClicked()">
+            Inventory
+          </button>
+          <button class="nav-button archive" onclick="archiveClicked()">
+            Archive
+          </button>
+        </div>
+        <div class="help-container"><a href="#">Help?</a></div>
+      </nav>
+
+      <div class="inner-grid">
+        <main>
+          <article class="log-content"></article>
+          <article class="orders-content"></article>
+          <article class="inventory-content"></article>
+          <article class="archive-content"></article>
+        </main>
+        <aside></aside>
+        <footer>
+          <p>PCU Tailoring</p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="dashBoardScript.js"></script>
+  </body>
+</html>
