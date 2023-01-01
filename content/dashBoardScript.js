@@ -14,6 +14,8 @@ function buttonReset() {
   });
 }
 
+const newButtonColor = "background-color: rgba(157, 157, 157, 0.79);";
+
 function clearContent() {
   const studentLogs = document.querySelector(".log-content");
   const orders = document.querySelector(".orders-content");
@@ -51,26 +53,26 @@ function logClicked() {
     "            </div>";
 
   const logBtn = document.querySelectorAll(".nav-button").item(0);
-  logBtn.style.cssText = "background-color: rgba(157, 157, 157, 0.79);";
+  logBtn.style.cssText = newButtonColor;
 }
 function ordersClicked() {
   clearContent();
   buttonReset();
 
   const logBtn = document.querySelectorAll(".nav-button").item(1);
-  logBtn.style.cssText = "background-color: rgba(157, 157, 157, 0.79);";
+  logBtn.style.cssText = newButtonColor;
 }
 function inventoryClicked() {
   clearContent();
   buttonReset();
 
   const logBtn = document.querySelectorAll(".nav-button").item(2);
-  logBtn.style.cssText = "background-color: rgba(157, 157, 157, 0.79);";
+  logBtn.style.cssText = newButtonColor;
 }
 function archiveClicked() {
   clearContent();
   buttonReset();
 
   const logBtn = document.querySelectorAll(".nav-button").item(3);
-  logBtn.style.cssText = "background-color: rgba(157, 157, 157, 0.79);";
+  logBtn.style.cssText = newButtonColor;
 }
